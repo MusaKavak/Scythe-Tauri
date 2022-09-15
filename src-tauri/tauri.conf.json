@@ -15,6 +15,10 @@
       "all": true,
       "window": {
         "all": true
+      },
+      "http": {
+        "all": true,
+        "scope": []
       }
     },
     "bundle": {

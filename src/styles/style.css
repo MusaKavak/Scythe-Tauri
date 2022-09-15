@@ -1,0 +1,51 @@
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5;
+}
+
+:root {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+html {
+  background-color: rgba(0, 128, 0, 0.233);
+  overflow: hidden
+}
+
+#bubble {
+  background-color: lightcoral;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bubble-block {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: inherit;
+  z-index: 5;
+}
+
+#bubble img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  z-index: 3;
+  user-select: none;
+}

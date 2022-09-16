@@ -5,14 +5,13 @@ var url: string;
 var label: string;
 
 const userState = localStorage.getItem("UserState");
-if (userState == null) {
-    url = "./src/windows/loginWindow/index.html";
-    label = "Login";
-} else {
+if (userState != null && userState.length > 5) {
     url = "./src/windows/bubbleWindow/index.html";
     label = "Scythe";
-
     UserState.user = JSON.parse(userState);
+} else {
+    url = "./src/windows/loginWindow/index.html";
+    label = "Login";
 }
 
 const newWindow = new WebviewWindow(label!!, {

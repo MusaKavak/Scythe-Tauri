@@ -45,7 +45,8 @@ function saveUser(user: User | null) {
         decorations: false,
         width: 800,
         height: 600,
-        center: true
+        center: true,
+        transparent: true,
     })
 
     newWindow.once('tauri://created', () => {

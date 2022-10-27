@@ -3,25 +3,21 @@ import { Constants } from "../constants"
 import { UserState } from "../userState";
 
 export class Client {
-    static socket: Socket | null = null;
+    static socket: Socket | undefined = undefined;
 
-    getSocket(): Socket | null {
-        if (Client.socket == null) {
+    static getSocket(): Socket | undefined {
+        if (Client.socket == undefined) {
             const user = UserState.getUser();
-            if (user == null) {
-                console.log("User Is Not Logged In");
-                return null;
+            if (user == undefined) {
+                return undefined;
             } else {
                 Client.socket = io(new Constants().webSocketUrl)
-
                 Client.socket.on('connect', () => {
-                    Client.socket!.emit("JoinRoom", user.id.toString())
+                    Client.socket!.emit("JoinRoom", user.id.toString(), "Tauri")
                 })
-                console.log("Client is null")
                 return Client.socket
             }
         }
-        console.log("Client is not null")
         return Client.socket
     }
 }

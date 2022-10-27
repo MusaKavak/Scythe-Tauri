@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/notification.css">
+    <link rel="stylesheet" href="./styles/mediaSession.css">
+    <link rel="stylesheet" href="./styles/tabs.css">
+    <link rel="stylesheet" href="./styles/pages.css">
+</head>
+
+<body class="disable">
+    <div id="inner-body">
+        <div id="bar"></div>
+        <div id="newNotificationContainer" class="disable">
+            <div id="newNotification"></div>
+        </div>
+        <div id="mediaSessionAreaContainer" class="disable">
+            <div id="mediaSessionArea"></div>
+        </div>
+        <div id="tabsContainer" class="disable">
+            <div id="tabs">
+                <div class="tab" id="tab1">
+                    <svg width="1024px" height="1024px" viewBox="0 0 1024 1024" class="icon"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor"
+                            d="M512 128v64H256a64 64 0 00-64 64v512a64 64 0 0064 64h512a64 64 0 0064-64V512h64v256a128 128 0 01-128 128H256a128 128 0 01-128-128V256a128 128 0 01128-128h256z" />
+                        <path fill="currentColor"
+                            d="M768 384a128 128 0 100-256 128 128 0 000 256zm0 64a192 192 0 110-384 192 192 0 010 384z" />
+                    </svg>
+                </div>
+                <div class="tab" id="tab2">
+                    <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" class="bi bi-images">
+                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                        <path
+                            d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z" />
+                    </svg>
+                </div>
+                <div class="tab" id="tab3">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 454.072 454.072"
+                        xml:space="preserve">
+                        <g>
+                            <path d="M364.639,0H192.671c-21.836,0-39.601,17.765-39.601,39.601v49.817h27.408V39.601c0-6.723,5.47-12.193,12.193-12.193
+                    H364.64c6.723,0,12.193,5.47,12.193,12.193v265.335c0,6.723-5.47,12.192-12.193,12.192h-40.085v27.408h40.085
+                    c21.836,0,39.6-17.765,39.6-39.6V39.601C404.239,17.765,386.475,0,364.639,0z" />
+                            <path d="M261.401,109.536H89.432c-21.836,0-39.6,17.765-39.6,39.601v265.334c0,21.836,17.764,39.601,39.6,39.601h171.969
+                    c21.836,0,39.601-17.765,39.601-39.601V149.137C301.002,127.301,283.237,109.536,261.401,109.536z M273.594,414.471
+                    L273.594,414.471c-0.001,6.723-5.471,12.193-12.194,12.193H89.432c-6.723,0-12.193-5.47-12.193-12.193V149.137
+                    c0-6.723,5.47-12.193,12.193-12.193h171.969c6.723,0,12.193,5.47,12.193,12.193V414.471z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="tab" id="tab4">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-4.586l-2.707 2.707a1 1 0 0 1-1.414 0L8.586 19H4a2 2 0 0 1-2-2V6zm18 0H4v11h5a1 1 0 0 1 .707.293L12 19.586l2.293-2.293A1 1 0 0 1 15 17h5V6zM6 9.5a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1z"
+                            fill="#0D0D0D" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div id="pagesContainer" class="disable">
+            <div id="pages">
+                <div id="page" style="--i:0">
+                    <div class="pageBody" id="notificationPage"></div>
+                </div>
+                <div id="page" style="--i:1">
+                    <iframe src="./pages/imagesPage/imagesPage.html" frameborder="0"></iframe>
+                </div>
+                <div id="page" style="--i:2">
+                    <div class="pageBody" id="filesPage">
+                        <!-- <div id="folder">
+                            <div id="header">
+                                
+                                <div id="">Internal Storage</div>
+                                <div id="itemCount">10</div>
+                            </div>
+                            <div id="fileListArea">
+                                <div id="listItem">Music</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="page" style="--i:3">
+                    <iframe src="./pages/chatPage/chatPage.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="bottomDivider"></div>
+    </div>
+</body>
+<script type="module" src="./scripts/layout.ts"></script>
+<script type="module" src="./scripts/socketListener.ts"></script>
+<script type="module" src="./scripts/tabs.ts"></script>
+
+</html>

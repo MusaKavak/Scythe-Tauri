@@ -1,0 +1,67 @@
+#filesPage {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    position: relative;
+    overflow: hidden;
+}
+
+#folder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    transition: 0.5s;
+    animation: normal 0.5s folderEntrance;
+}
+
+#folder.previous {
+    left: -110%;
+}
+
+@keyframes folderEntrance {
+    0% {
+        left: 110%;
+    }
+
+    100% {
+        left: 0%
+    }
+}
+
+#folder #header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: var(--foreground);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#fileListArea {
+    padding: 10px;
+    width: 100%;
+    max-height: 90%;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+#listItem {
+    min-width: 48%;
+    height: 50px;
+    background-color: var(--foreground);
+    color: var(--background);
+    border-radius: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}

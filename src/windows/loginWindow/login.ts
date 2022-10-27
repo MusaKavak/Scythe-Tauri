@@ -38,10 +38,9 @@ function saveUser(user: User | null) {
     if (user == null) { console.info("Some Error Occurred"); return; }
 
     localStorage.setItem("UserState", JSON.stringify(user));
-    UserState.user = user
 
     const newWindow = new WebviewWindow("Scythe", {
-        url: "./src/windows/bubbleWindow/index.html",
+        url: "./src/windows/barWindow/index.html",
         decorations: false,
         width: 800,
         height: 600,

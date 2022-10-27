@@ -5,7 +5,7 @@ var url: string;
 var label: string;
 
 if (UserState.getUser() != null) {
-    url = "./src/windows/bubbleWindow/index.html";
+    url = "./src/windows/barWindow/index.html";
     label = "Scythe";
 } else {
     url = "./src/windows/loginWindow/index.html";
